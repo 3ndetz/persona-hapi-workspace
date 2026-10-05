@@ -1,0 +1,13 @@
+{
+  "name": "persona-hapi-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Independent tabbed workspace for stock HAPI with six horizontal chat panes",
+  "license": "MIT",
+  "engines": {"node": ">=22"},
+  "scripts": {
+    "start": "node proxy.mjs",
+    "test": "node --check proxy.mjs && node --check workspace/app.mjs && node --check workspace/embed.js && node --test workspace/state.test.mjs proxy.test.mjs"
+  }
+}
